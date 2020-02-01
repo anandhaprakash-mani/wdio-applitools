@@ -2,6 +2,7 @@ import {ClassicRunner,
     Eyes,
     FileLogHandler,
     StitchMode,
+    By,
   Target} from '@applitools/eyes-webdriverio';  
 
   const dateTime = Date.now();
@@ -34,7 +35,7 @@ import {ClassicRunner,
       $('app-header-with-search').scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
       
       browser.call(() => eyes.open(browser, 'Category Page','/medical'));
-      browser.call(() => eyes.check('CategoryFullPage',Target.window().fully()));
+      browser.call(() => eyes.check('CategoryFullPage',Target.window().fully().scrollRootElement(By.css('body'))));
 
     });
   
