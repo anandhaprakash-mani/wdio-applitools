@@ -15,6 +15,7 @@ import {resolve} from 'path'
   mkdirSync(folder)
   const runner = new ClassicRunner();
   const eyes = new Eyes(runner);
+  eyes.setStitchOverlap(60)
   eyes.setSaveDebugScreenshots(true)
   eyes.setDebugScreenshotsPath(folder)
   const logHandler = new FileLogHandler(true, `${folder}/eyes.log`);
