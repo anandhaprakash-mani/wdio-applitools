@@ -9,8 +9,8 @@ import {ClassicRunner,
 // import {resolve} from 'path'
 
   const dateTime = Date.now();
-  const batchInfo =  'category-page-tests' ;
-  const batchId = 'category-page-' + '-' + dateTime;
+  const batchInfo =  'home-page-tests' ;
+  const batchId = 'home-page-' + '-' + dateTime;
   // const folder = resolve(__dirname, `../../../eyes-logs/${batchId}`)
   // mkdirSync(folder)
   const runner = new ClassicRunner();
@@ -21,14 +21,14 @@ import {ClassicRunner,
   // const logHandler = new FileLogHandler(true, `${folder}/eyes.log`);
   // logHandler.open()
   
-  describe('category-page : tests-applitools :: ', () => {
+  describe('home-page : tests-applitools :: ', () => {
 
     beforeAll(() => {
       eyes.setMatchLevel('Layout');
       eyes.setStitchMode(StitchMode.CSS);
       // eyes.setLogHandler(logHandler);
       eyes.setApiKey(browser.config['APPLITOOLS_API_KEY']);
-      eyes.addProperty('Spec', 'category-page.spec');
+      eyes.addProperty('Spec', 'home-page.spec');
       if ( process.env.APPLITOOLS_BATCH_NAME === undefined &&  process.env.APPLITOOLS_BATCH_ID === undefined ) {
           eyes.setBatch({id: batchId, name: batchInfo});
         } else {
@@ -39,12 +39,9 @@ import {ClassicRunner,
     
     it('should check that if there are any visual differences on :: FullPage ' , () => {
       
-      browser.url('/medical/?automated=true');
-      
-      $('app-footer').scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
-      $('app-header-with-search').scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
-      
-      browser.call(() => eyes.open(browser, 'Category Page','/medical'));
+      browser.url('/?automated=true');
+
+      browser.call(() => eyes.open(browser, 'Category Page','homePage'));
       browser.call(() => eyes.check('CategoryFullPage',Target.window().fully().scrollRootElement(By.css('body'))));
 
     });
