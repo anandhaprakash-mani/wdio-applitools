@@ -13,12 +13,13 @@ exports.config = {
     user: bstackUserName,
     key: bstackPassword,
     specs: [
-        './dist/src/specs/**/*.js'
+        './dist/src/specs/category*.spec.js',
     ],
     maxInstances: 10,
     APPLITOOLS_API_KEY: applitoolsKey,
     capabilities: browsersList['DEFAULT_BROWSERLIST'][browserName],
-    logLevel: 'info',
+    logLevel: 'trace',
+    outputDir: './wdio-logs/',
     baseUrl: 'https://www.softwareadvice.com/',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,

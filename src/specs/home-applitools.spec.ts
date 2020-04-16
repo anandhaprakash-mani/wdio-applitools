@@ -21,7 +21,7 @@ import {ClassicRunner,
   // const logHandler = new FileLogHandler(true, `${folder}/eyes.log`);
   // logHandler.open()
   
-  describe('home-page : tests-applitools :: ', () => {
+  xdescribe('home-page : tests-applitools :: ', () => {
 
     beforeAll(() => {
       eyes.setMatchLevel('Layout');
@@ -29,21 +29,14 @@ import {ClassicRunner,
       // eyes.setLogHandler(logHandler);
       eyes.setApiKey(browser.config['APPLITOOLS_API_KEY']);
       eyes.addProperty('Spec', 'home-page.spec');
-      if ( process.env.APPLITOOLS_BATCH_NAME === undefined &&  process.env.APPLITOOLS_BATCH_ID === undefined ) {
-          eyes.setBatch({id: batchId, name: batchInfo});
-        } else {
-          eyes.setBatch(process.env.APPLITOOLS_BATCH_NAME, process.env.APPLITOOLS_BATCH_ID);
-        }
-    });
-  
-    
-    it('should check that if there are any visual differences on :: FullPage ' , () => {
-      
-      browser.url('/?automated=true');
+      eyes.setBatch({id: batchId, name: batchInfo});
 
+    });
+
+    it('should check that if there are any visual differences on :: FullPage ' , () => {
+      browser.url('/?automated=true');
       browser.call(() => eyes.open(browser, 'Category Page','homePage'));
       browser.call(() => eyes.check('CategoryFullPage',Target.window().fully().scrollRootElement(By.css('body'))));
-
     });
   
     afterEach( () => {
@@ -57,4 +50,3 @@ import {ClassicRunner,
     });
   
   });
-  
