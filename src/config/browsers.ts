@@ -129,7 +129,7 @@ const BROWSERS = {
     edge: [{
         'browserName' : 'Edge',
         'browserstack.selenium_version' : '4.0.0-alpha-2',
-        'browserVersion' : '16.0',
+        'browserVersion' : '18.0',
         'browserstack.local': browserstackLocal,
         'browserstack.localIdentifier': browserstackLocalIdentifier,
         'bstack:options' : {

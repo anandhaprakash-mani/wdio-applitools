@@ -1,9 +1,15 @@
-2020-04-16T19:08:54.673Z DEBUG @wdio/utils:initialiseServices: initialise service "browserstack" as NPM package
-2020-04-16T19:08:54.697Z INFO @wdio/cli:launcher: Run onPrepare hook
-2020-04-16T19:08:54.698Z INFO @wdio/browserstack-service: browserstackLocal is not enabled - skipping...
-2020-04-16T19:08:54.700Z INFO @wdio/cli:launcher: Run onWorkerStart hook
-2020-04-16T19:08:54.701Z INFO @wdio/local-runner: Start worker 0-0 with arg: wdio.conf.ts,--browserName,ie
-2020-04-16T19:18:38.867Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
-2020-04-16T19:18:38.869Z INFO @wdio/cli:launcher: Run onComplete hook
-2020-04-16T19:18:38.894Z INFO @wdio/local-runner: Shutting down spawned worker
-2020-04-16T19:18:39.147Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2020-04-24T19:45:04.500Z DEBUG @wdio/utils:initialiseServices: initialise service "browserstack" as NPM package
+2020-04-24T19:45:04.526Z INFO @wdio/cli:launcher: Run onPrepare hook
+2020-04-24T19:45:04.526Z INFO @wdio/browserstack-service: browserstackLocal is not enabled - skipping...
+2020-04-24T19:45:04.528Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-04-24T19:45:04.528Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-04-24T19:45:04.528Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-04-24T19:45:04.530Z INFO @wdio/local-runner: Start worker 0-0 with arg: ./src/config/wdio.conf.ts,--browserName,edge
+2020-04-24T19:45:04.537Z INFO @wdio/local-runner: Start worker 0-1 with arg: ./src/config/wdio.conf.ts,--browserName,edge
+2020-04-24T19:45:04.541Z INFO @wdio/local-runner: Start worker 0-2 with arg: ./src/config/wdio.conf.ts,--browserName,edge
+2020-04-24T19:48:20.109Z DEBUG @wdio/local-runner: Runner 0-2 finished with exit code 0
+2020-04-24T19:48:25.517Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 0
+2020-04-24T19:49:27.653Z DEBUG @wdio/local-runner: Runner 0-1 finished with exit code 0
+2020-04-24T19:49:27.656Z INFO @wdio/cli:launcher: Run onComplete hook
+2020-04-24T19:49:27.696Z INFO @wdio/local-runner: Shutting down spawned worker
+2020-04-24T19:49:27.956Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
