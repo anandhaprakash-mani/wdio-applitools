@@ -156,6 +156,7 @@ const BROWSERS = {
             'resolution' : '1920x1080',
             'networkLogs' : 'true',
             'consoleLogs' : 'verbose',
+            'idleTimeout' : 300,
             'ie' : {
                 'noFlash' : 'true',
                 'driver' : '3.141.59',
