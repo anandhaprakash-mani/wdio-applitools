@@ -1,0 +1,58 @@
+2020-05-26T12:38:52.797Z INFO @wdio/local-runner: Run worker command: run
+2020-05-26T12:38:52.851Z DEBUG @wdio/local-runner:utils: init remote session
+2020-05-26T12:38:52.854Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-05-26T12:38:54.270Z WARN @wdio/jasmine-framework: Unable to load spec files quite likely because they rely on `browser` object that is not fully initialised.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): /Users/amani/github_repos/wdio-applitools/dist/specs/category-applitools.spec.js
+ Error:  Error: IllegalType: Layout is not a valid 'undefined' value
+    at Function.isValidEnumValue (/Users/amani/github_repos/wdio-applitools/node_modules/@applitools/eyes-webdriverio/node_modules/@applitools/eyes-sdk-core/lib/utils/ArgumentGuard.js:259:13)
+    at ImageMatchSettings.setMatchLevel (/Users/amani/github_repos/wdio-applitools/node_modules/@applitools/eyes-webdriverio/node_modules/@applitools/eyes-sdk-core/lib/config/ImageMatchSettings.js:113:19)
+    at EyesWDIO.setMatchLevel (/Users/amani/github_repos/wdio-applitools/node_modules/@applitools/eyes-webdriverio/node_modules/@applitools/eyes-sdk-core/lib/EyesBase.js:771:51)
+    at helper.setEyesConfig (/Users/amani/github_repos/wdio-applitools/dist/config/helper.js:18:14)
+    at Object.<anonymous> (/Users/amani/github_repos/wdio-applitools/dist/specs/category-applitools.spec.js:5:29)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2020-05-26T12:38:54.271Z DEBUG @wdio/utils:initialiseServices: initialise service "browserstack" as NPM package
+2020-05-26T12:38:54.281Z DEBUG @wdio/local-runner:utils: init remote session
+2020-05-26T12:38:54.282Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-05-26T12:38:54.284Z INFO webdriver: [POST] https://hub-cloud.browserstack.com/wd/hub/session
+2020-05-26T12:38:54.284Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { browserName: 'IE',
+        browserVersion: '11.0',
+        'browserstack.selenium_version': '3.141.59',
+        'bstack:options': [Object] },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { browserName: 'IE',
+     browserVersion: '11.0',
+     'browserstack.selenium_version': '3.141.59',
+     'bstack:options':
+      { os: 'Windows',
+        osVersion: '10',
+        projectName: 'NEST',
+        debug: 'true',
+        resolution: '1920x1080',
+        networkLogs: 'true',
+        consoleLogs: 'verbose',
+        idleTimeout: 300,
+        ie: [Object] } } }
+2020-05-26T12:39:10.511Z INFO @wdio/browserstack-service: internet explorer 11 session: https://automate.browserstack.com/builds/48501d1c769d04793ef1dd51c477231239048624/sessions/bec73a5984a4865b33cbc71489b109baa0aa1202
+2020-05-26T12:39:10.516Z ERROR @wdio/runner: Error: IllegalType: Layout is not a valid 'undefined' value
+    at Function.isValidEnumValue (/Users/amani/github_repos/wdio-applitools/node_modules/@applitools/eyes-webdriverio/node_modules/@applitools/eyes-sdk-core/lib/utils/ArgumentGuard.js:259:13)
+    at ImageMatchSettings.setMatchLevel (/Users/amani/github_repos/wdio-applitools/node_modules/@applitools/eyes-webdriverio/node_modules/@applitools/eyes-sdk-core/lib/config/ImageMatchSettings.js:113:19)
+    at EyesWDIO.setMatchLevel (/Users/amani/github_repos/wdio-applitools/node_modules/@applitools/eyes-webdriverio/node_modules/@applitools/eyes-sdk-core/lib/EyesBase.js:771:51)
+    at helper.setEyesConfig (/Users/amani/github_repos/wdio-applitools/dist/config/helper.js:18:14)
+    at Object.<anonymous> (/Users/amani/github_repos/wdio-applitools/dist/specs/category-applitools.spec.js:5:29)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2020-05-26T12:39:10.517Z INFO webdriver: COMMAND deleteSession()
+2020-05-26T12:39:10.518Z INFO webdriver: [DELETE] https://hub-cloud.browserstack.com/wd/hub/session/bec73a5984a4865b33cbc71489b109baa0aa1202
+2020-05-26T12:39:10.743Z INFO webdriver: RESULT 

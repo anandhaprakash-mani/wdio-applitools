@@ -1,0 +1,18 @@
+2020-05-26T12:38:52.169Z DEBUG @wdio/utils:initialiseServices: initialise service "browserstack" as NPM package
+2020-05-26T12:38:52.190Z INFO @wdio/cli:launcher: Run onPrepare hook
+2020-05-26T12:38:52.191Z INFO @wdio/browserstack-service: browserstackLocal is not enabled - skipping...
+2020-05-26T12:38:52.193Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-05-26T12:38:52.193Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-05-26T12:38:52.193Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-05-26T12:38:52.193Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-05-26T12:38:52.195Z INFO @wdio/local-runner: Start worker 0-0 with arg: ./src/config/wdio.conf.ts,--browserName,ie
+2020-05-26T12:38:52.203Z INFO @wdio/local-runner: Start worker 0-1 with arg: ./src/config/wdio.conf.ts,--browserName,ie
+2020-05-26T12:38:52.206Z INFO @wdio/local-runner: Start worker 0-2 with arg: ./src/config/wdio.conf.ts,--browserName,ie
+2020-05-26T12:38:52.210Z INFO @wdio/local-runner: Start worker 0-3 with arg: ./src/config/wdio.conf.ts,--browserName,ie
+2020-05-26T12:39:10.875Z DEBUG @wdio/local-runner: Runner 0-1 finished with exit code 1
+2020-05-26T12:39:11.088Z DEBUG @wdio/local-runner: Runner 0-3 finished with exit code 1
+2020-05-26T12:39:11.137Z DEBUG @wdio/local-runner: Runner 0-2 finished with exit code 1
+2020-05-26T12:39:23.671Z INFO @wdio/local-runner: Shutting down spawned worker
+2020-05-26T12:39:23.927Z INFO @wdio/local-runner: Waiting for 1 to shut down gracefully
+2020-05-26T12:39:24.177Z INFO @wdio/local-runner: Waiting for 1 to shut down gracefully
+2020-05-26T12:39:24.429Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

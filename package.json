@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@applitools/eyes-selenium": "^4.33.31",
-    "@applitools/eyes-webdriverio": "^5.9.23",
+    "@applitools/eyes-webdriverio": "^5.11.1",
     "@types/jasmine": "^3.5.10",
     "@wdio/allure-reporter": "^6.0.14",
     "@wdio/browserstack-service": "^6.0.17",
