@@ -24,7 +24,7 @@ describe('product-tests', () => {
   });
 
   afterEach( () => {
-    if (browser.call(() =>  eyes.getIsOpen() )) {
+    if (browser.call(async () =>  eyes.getIsOpen() )) {
       browser.call(() => eyes.close(false));
     }
   });
